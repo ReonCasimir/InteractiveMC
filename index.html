@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>نادي هووجورتس السحري</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+        <h1>نادي هووجورتس السحري - لوحة التحكم</h1>
+    </header>
+
+    <main>
+        <section class="event-form">
+            <h2>إضافة فعالية جديدة</h2>
+            <form id="event-form">
+                <label for="event-name">اسم الفعالية:</label>
+                <input type="text" id="event-name" name="event-name"><br><br>
+
+                <label for="event-time">الوقت:</label>
+                <input type="datetime-local" id="event-time" name="event-time"><br><br>
+
+                <button type="submit">حفظ</button>
+            </form>
+        </section>
+
+        <section class="event-list">
+            <h2>قائمة الفعاليات</h2>
+            <ul id="events-container"></ul>
+            <a href="events.html">عرض جميع الفعاليات</a>  <!-- Shortcut to events.html -->
+        </section>
+
+        <section class="visitor-count">
+            <h2>إحصائيات الزيارات</h2>
+            <p>عدد الزيارات الإجمالي: <span id="total-visits">0</span></p>
+            <p>عدد الزوار الفريدين: <span id="unique-visits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p> نادي هوجورتس السحري 2024 ©</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
