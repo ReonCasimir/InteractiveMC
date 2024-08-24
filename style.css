@@ -140,23 +140,6 @@ a:hover {
     font-size: 1.5em;
 }
 
-/* Counter Container */
-.counter-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.counter-container img {
-    margin-left: 10px; /* Space between the image and text */
-}
-
-.counter-text {
-    font-size: 1.5em; /* Adjust font size as needed */
-    font-weight: bold;
-    margin-left: 10px; /* Space between the text and image */
-}
-
 /* Footer Style */
 footer {
     background-color: rgba(0, 0, 0, 0.8);
