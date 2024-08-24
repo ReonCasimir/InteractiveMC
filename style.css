@@ -103,24 +103,35 @@ h2 {
 }
 
 /* Event List Styles */
-.event-list ul {
+.event-list {
     list-style: none;
     padding: 0;
 }
 
-.event-list li {
+.event-list-item {
     padding: 15px;
     border-bottom: 2px solid #4CAF50;
     margin-bottom: 10px;
 }
 
-.event-list li .event-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Event Name Style */
+.event-name {
+    font-size: 1.5em; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Underline the text */
+    color: #4CAF50; /* Set the color for the text (adjust to your preference) */
+    margin-bottom: 10px; /* Space below the event name */
+    display: block; /* Ensure it's a block element to control spacing */
 }
 
-.event-list li .event-details .edit-delete {
+/* Event Details Style */
+.event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event-details .edit-delete {
     display: flex;
     gap: 10px;
 }
@@ -164,7 +175,7 @@ footer {
         font-size: 2.5em;
     }
 
-    .event-list li .event-details {
+    .event-list-item .event-details {
         flex-direction: column;
         align-items: flex-start;
     }
